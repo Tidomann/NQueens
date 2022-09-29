@@ -70,15 +70,13 @@ int getN() {
 // a board with column AA
 //
 string chessNotation(int row, int col){
-    //
     if(col > 25){
         return "Error: Column Past Z";
     }
-    char letter = (char)65+col;
+    char letter = (char)65+col; // Character 'A' value starts at 65
     string result;
     result.push_back(letter);
-    result = result + std::to_string(row+1);
-    return result;
+    return result + std::to_string(row+1);
 }
 
 //
