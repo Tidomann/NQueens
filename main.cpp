@@ -56,8 +56,8 @@ int getN() {
             cin.clear();
             cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n'); // Ignore all characters entered, new line
         }
-    } while (N < 1 || N > 14);		// Loop until integer between 1 and 14 is entered
-    return N;						// Return N value
+    } while (N < 1 || N > 14); // Only exit loop when valid input is given
+    return N;
 
 }
 
