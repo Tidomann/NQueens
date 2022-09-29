@@ -15,10 +15,10 @@ using std::string;
 using std::vector;
 
 int getN();
-string chessNotation(int, int);
+string chessNotation(int row, int col);
 bool checkSolution(bool board[14][14], int size);
-int placeQueens(bool[14][14], int size);
-bool moveQueen(bool[14][14], int);
+int placeQueens(bool board[14][14], int size);
+bool moveQueen(bool board[14][14], int size);
 
 int main() {
     //Generate Statically Sized Array of Size 14x14
