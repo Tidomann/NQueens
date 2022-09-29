@@ -2,6 +2,7 @@
 NQueens Solution Finder. Non-recursive brute force was a requirement of the project to find all solutions
 
 Project Requirements:
+
 Implement a C++ program which solves the N-Queens problem.
 
 1. The implementation of the program should involve a single source file.
