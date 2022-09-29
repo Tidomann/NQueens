@@ -51,10 +51,10 @@ int getN() {
     unsigned short int N;			// Declare N
     // Prompt user for N value until valid
     do {
-        cout << "Enter a number N between 1 and 14: ";						// Prompt message
-        if (!(cin >> N)) {													// If input from console fails
-            cin.clear();													// Clear input
-            cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');	// Ignore all characters entered, new line
+        cout << "Enter a number N between 1 and 14: ";
+        if (!(cin >> N)) { // If input from console fails
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n'); // Ignore all characters entered, new line
         }
     } while (N < 1 || N > 14);		// Loop until integer between 1 and 14 is entered
     return N;						// Return N value
