@@ -139,7 +139,8 @@ bool checkSolution(bool board[14][14], int size){
 // This function places a queen in the NxN Board (a 2D array), and iterates through all possibilities
 // Because a valid solution must have a queen in every row, we can start with a queen populating the entire
 // first column. We can then move the queen in the first row until every position has been tried. When every position
-// has been tested,
+// has been tested, returns the number of solutions found
+//
 int placeQueens(bool board[14][14], int size) {
     int solutions = 0;
     // Place the queens along the first column
@@ -168,12 +169,13 @@ int placeQueens(bool board[14][14], int size) {
 
 //
 // Function:    moveQueen()
-// This function returns true if it is able to move a queen down a column.
-// By iterating through the board it can meet a return condition early if it is able to move a queen down the column
-// If a queen reaches the final column of the chess board, and we can still test another row, we reset the queen in that
-// row and all previous rows back to the initial column and iterate to the next row.
+// This function returns true if it is able to move a queen into a new column.
+// By iterating through the board it can meet a return condition early if it is able to move a queen down the row
+// If a queen reaches the final column of the row on the chess board, and we can still test another row, we reset the queen in that
+// row to the initial column and iterate to the next row.
 // This process is repeated until a queen can be moved and we return true,
 // or we iterate to the final row and all queens were found to be in the final column.
+//
 bool moveQueen(bool board[14][14], int size){
     for(int row = 0; row < size; ++row){
         for(int col = 0; col < size; ++ col){
